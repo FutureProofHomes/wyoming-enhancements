@@ -35,12 +35,12 @@ Update `--send-command-rate` to to match our `441000` sample rate we've been usi
 --snd-command-rate 44100 \
 ```
 
-Add `--detection-command` so that we duck our volume when necessary:
+Add `--detection-command` so that we duck our volume when necessary.  BE SURE TO ADD YOUR USERNAME!
 ```sh
 --detection-command '/home/<your_username>/wyoming-enhancements/snapcast/scripts/awake.sh' \
 ```
 
-Add `--tts-stop-command` so that we turn the volume back up after the interaction is complete:
+Add `--tts-stop-command` so that we turn the volume back up after the interaction is complete.  BE SURE TO ADD YOUR USERNAME!
 ```sh
 --tts-stop-command '/home/<your_username>/wyoming-enhancements/snapcast/scripts/done.sh' \
 ```
