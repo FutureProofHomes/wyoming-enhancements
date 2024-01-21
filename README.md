@@ -33,5 +33,5 @@ Enhance the capabilities of your Wyoming Voice Assistants to unlock multi-room m
 - [BETA Music Assistant](https://github.com/music-assistant/hass-music-assistant)
 
 **Documentation & Tutorials:**
-- Follow the steps outlined [here](https://github.com/FutureProofHomes/wyoming-enhancements/tree/main/snapcast/docs).
+- Follow the steps outlined [here](https://github.com/FutureProofHomes/wyoming-enhancements/tree/master/snapcast/docs).
 - Video tutorial link (To be determined)
