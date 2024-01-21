@@ -7,7 +7,7 @@ ssh <your_username>@<pi_IP_address>`
 
 2. Make sure you are in your home directory
 ```sh
-cd /home/<your_username>
+cd ~
 ```
 
 3. Clone this wyoming-enhancements repository to your Pi so you can use the scripts.
