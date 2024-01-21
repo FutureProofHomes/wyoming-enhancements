@@ -30,7 +30,7 @@ Update `--send-command` to use PulseAudio's `paplay` command:
 --snd-command 'paplay --property=media.role=announce --rate=44100 --channels=1 --format=s16le --raw' \
 ```
 
-Update `--send-command-rate` to to match our `441000` sample rate we've been using`:
+Update `--send-command-rate` to to match our `44100` sample rate we've been using`:
 ```sh
 --snd-command-rate 44100 \
 ```
