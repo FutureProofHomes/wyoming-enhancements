@@ -15,7 +15,7 @@ Elevate Home Assistant's voice capabilities by integrating a Large Language Mode
 - [LocalAI](https://localai.io/) (Optional for local LLM)
 
 **Documentation & Tutorials:**
-- [Watch our video tutorial](https://www.youtube.com/watch?v=pAKqKTkx5X4)
+- [Watch the video tutorial](https://www.youtube.com/watch?v=pAKqKTkx5X4)
 - [Recommended LLM Prompt](https://github.com/FutureProofHomes/wyoming-enhancements/blob/main/extended_openai_conversation/recommended_prompt.txt)
 
 ## Enhancement 2: Multi-Zone Music Streaming for Wyoming Satellite
@@ -34,4 +34,4 @@ Enhance the capabilities of your Wyoming Voice Assistants to unlock multi-room m
 
 **Documentation & Tutorials:**
 - Follow the steps outlined [here](https://github.com/FutureProofHomes/wyoming-enhancements/tree/master/snapcast/docs).
-- Video tutorial link (To be determined)
+- [Watch the video tutorial](https://youtu.be/kS0agn13hhU)
