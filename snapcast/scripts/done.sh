@@ -13,7 +13,8 @@ sleep 1
 
 echo $(date) [done.sh] ...Killing 'silence' pulseaudio client
 
-#this will search the list of running streams on the PA server for the 'silence' stream and kill it.  This will take the PA server out of ducking mode and your music will return to normal volume
+#Here we will end the audio ducking we invoked at teh awake.sh stage
+#this will search the list of clients on the PA server for the 'silence' stream we initiated and kill it.  This will take the PA server out of ducking mode and your music will return to normal volume
 sudo kill $(pactl list clients | awk '/application.name = "silence"/,/^$/' | awk -F' = ' '/application.process.id/ {print $2}' | sed 's/"//g')
 
 #insert any other commands you like to happen.  This example calls a webhook on the home assistant server to toggle a mute on a sound bar:
