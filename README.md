@@ -1,6 +1,6 @@
 # Wyoming Voice Assistant Enhancements
 
-This repository is dedicated to sharing tutorials that enhance Home Assistant's built-in voice assistant and their [Wyoming Voice Satellite project](https://github.com/rhasspy/wyoming-satellite).
+This repository is dedicated to sharing tutorials that enhance Home Assistant's [Wyoming Voice Satellite project](https://github.com/rhasspy/wyoming-satellite).
 
 ## Enhancement 1: Extended OpenAI Conversation Integration
 
