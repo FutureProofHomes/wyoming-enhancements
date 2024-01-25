@@ -22,12 +22,12 @@ Requires=pulseaudio.service
 
 Update `--mic-command` to use PulseAudio's `parecord` command:
 ```sh
---mic-command 'parecord --property=media.role=phone --rate=16000 --channels=1 --format=s16le --raw' \
+--mic-command 'parecord --property=media.role=phone --rate=16000 --channels=1 --format=s16le --raw --latency-msec 10' \
 ```
 
 Update `--send-command` to use PulseAudio's `paplay` command:
 ```sh
---snd-command 'paplay --property=media.role=announce --rate=44100 --channels=1 --format=s16le --raw' \
+--snd-command 'paplay --property=media.role=announce --rate=44100 --channels=1 --format=s16le --raw --latency-msec 10' \
 ```
 
 Update `--send-command-rate` to to match our `44100` sample rate we've been using`:
@@ -60,8 +60,8 @@ Type=simple
 ExecStart=/home/loftsatellite/wyoming-satellite/script/run \
     --name 'Loft Satellite' \
     --uri 'tcp://0.0.0.0:10700' \
-    --mic-command 'parecord --property=media.role=phone --rate=16000 --channels=1 --format=s16le --raw' \
-    --snd-command 'paplay --property=media.role=announce --rate=44100 --channels=1 --format=s16le --raw' \
+    --mic-command 'parecord --property=media.role=phone --rate=16000 --channels=1 --format=s16le --raw --latency-msec 10' \
+    --snd-command 'paplay --property=media.role=announce --rate=44100 --channels=1 --format=s16le --raw --latency-msec 10' \
     --snd-command-rate 44100 \
     --snd-volume-multiplier 0.1 \
     --mic-auto-gain 7 \
