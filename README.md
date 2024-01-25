@@ -13,13 +13,14 @@ Elevate Home Assistant's voice capabilities by integrating a Large Language Mode
 **Prerequisite Hardware/Software:**
 - [Wyoming Voice Satellite project](https://github.com/rhasspy/wyoming-satellite)
 
-**Additional Software Required:**
+**Additional Software/Configurations Required:**
 - [Extended OpenAI Conversation](https://github.com/jekalmin/extended_openai_conversation)
+- [Recommended LLM Prompt](https://github.com/FutureProofHomes/wyoming-enhancements/blob/main/extended_openai_conversation/recommended_prompt.txt)
 - [LocalAI](https://localai.io/) (Optional for local LLM)
 
 **Documentation & Tutorials:**
 - [Watch the video tutorial](https://www.youtube.com/watch?v=pAKqKTkx5X4)
-- [Recommended LLM Prompt](https://github.com/FutureProofHomes/wyoming-enhancements/blob/main/extended_openai_conversation/recommended_prompt.txt)
+- [Written Tutorial](https://github.com/rhasspy/wyoming-satellite)
 
 ## Enhancement 2: Multi-Zone Music Streaming for Wyoming Satellite
 
@@ -31,7 +32,7 @@ Enhance the capabilities of your Wyoming Voice Assistants to unlock multi-room m
 **Prerequisite Hardware/Software:**
 - [Wyoming Voice Satellite project](https://github.com/rhasspy/wyoming-satellite)
 
-**Additional Software Required:**
+**Additional Software/Configurations Required:**
 - [Extended OpenAI Conversation](https://github.com/jekalmin/extended_openai_conversation)
 - [Snapcast Server](https://github.com/Art-Ev/addon-snapserver)
 - [Snapcast Client](https://github.com/badaix/snapcast)
@@ -39,5 +40,5 @@ Enhance the capabilities of your Wyoming Voice Assistants to unlock multi-room m
 - [BETA Music Assistant](https://github.com/music-assistant/hass-music-assistant)
 
 **Documentation & Tutorials:**
-- Follow the steps outlined [here](https://github.com/FutureProofHomes/wyoming-enhancements/tree/master/snapcast/docs).
 - [Watch the video tutorial](https://youtu.be/kS0agn13hhU)
+- [Written tutorial](https://github.com/FutureProofHomes/wyoming-enhancements/tree/master/snapcast/docs)
