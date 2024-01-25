@@ -10,6 +10,9 @@ Elevate Home Assistant's voice capabilities by integrating a Large Language Mode
 - "Hey Jarvis, turn off the lights, lock the doors, and check if my kids are asleep."
 - "Hey Jarvis, who is Bruce Wayne?"
 
+**Prerequisite Hardware/Software:**
+- [Wyoming Voice Satellite project](https://github.com/rhasspy/wyoming-satellite)
+
 **Additional Software Required:**
 - [Extended OpenAI Conversation](https://github.com/jekalmin/extended_openai_conversation)
 - [LocalAI](https://localai.io/) (Optional for local LLM)
@@ -24,6 +27,9 @@ Enhance the capabilities of your Wyoming Voice Assistants to unlock multi-room m
 
 **Voice Command Examples:**
 - "Hey Jarvis, play Michael Jackson in the loft."
+
+**Prerequisite Hardware/Software:**
+- [Wyoming Voice Satellite project](https://github.com/rhasspy/wyoming-satellite)
 
 **Additional Software Required:**
 - [Extended OpenAI Conversation](https://github.com/jekalmin/extended_openai_conversation)
