@@ -1,1 +1,73 @@
-
+- spec:
+    name: execute_services
+    description: Use this function to execute service of devices in Home Assistant.
+    parameters:
+      type: object
+      properties:
+        list:
+          type: array
+          items:
+            type: object
+            properties:
+              domain:
+                type: string
+                description: The domain of the service
+              service:
+                type: string
+                description: The service to be called
+              service_data:
+                type: object
+                description: The service data object to indicate what to control.
+                properties:
+                  entity_id:
+                    type: array
+                    items:
+                      type: string
+                      description: The entity_id retrieved from available devices. It must start with domain, followed by dot character.
+                  area_id:
+                    type: array
+                    items:
+                      type: string
+                      description: The id retrieved from areas. You can specify only area_id without entity_id to act on all entities in that area
+            required:
+            - domain
+            - service
+            - service_data
+  function:
+    type: native
+    name: execute_service
+- spec:
+    name: get_attributes
+    description: Get attributes of any home assistant entity
+    parameters:
+      type: object
+      properties:
+        entity_id:
+          type: string
+          description: entity_id
+      required:
+      - entity_id
+  function:
+    type: template
+    value_template: "{{states[entity_id]}}"
+- spec:
+    name: play_music
+    description: Use this function to play music on a certain media_player
+    parameters:
+      type: object
+      properties:
+        music_query:
+          type: string
+          description: The artist, album, or type of music to play
+        mass_media_player:
+          type: string
+          description: The correct entity value starts with "media_player" and ends with "satellite".
+      required:
+      - music_query
+  function:
+    type: script
+    sequence:
+    - service: script.play_music
+      data:
+        music_query: '{{music_query}}'
+        mass_media_player: '{{mass_media_player}}'
