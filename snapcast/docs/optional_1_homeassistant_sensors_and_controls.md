@@ -1,4 +1,4 @@
-# Integrate Satellite PulseAudio into HomeAssistnat
+# [OPTIONAL] Integrate Satellite PulseAudio into HomeAssistnat
 
 ## Background
 Currently, there are no known integrations for controlling remote PulseAudio servers.
