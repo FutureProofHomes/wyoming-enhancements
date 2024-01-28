@@ -19,11 +19,10 @@ sequence:
      entity_id: "{{mass_media_player}}"
    data: {}
  - service: mass.play_media
-   target:
-     entity_id: "{{mass_media_player}}"
-   data:
-     media_id: "{{query_response.playlists[0].uri}}"
-     announce: false
+    data:
+      media_id: "{{query_response.playlists[0].uri}}"
+      entity_id: "{{mass_media_player}}"
+      enqueue: replace
 mode: single
 ```
 
@@ -56,11 +55,10 @@ sequence:
       entity_id: "{{mass_media_player or derived_mass_media_player}}"
     data: {}
   - service: mass.play_media
-    target:
-      entity_id: "{{mass_media_player or derived_mass_media_player}}"
     data:
       media_id: "{{query_response.playlists[0].uri}}"
-      announce: false
+      entity_id: "{{mass_media_player or derived_mass_media_player}}"
+      enqueue: replace
 mode: single
 ```
 
