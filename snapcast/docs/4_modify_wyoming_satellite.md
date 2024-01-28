@@ -87,7 +87,7 @@ sudo systemctl enable --now enhanced-wyoming-satellite.service
 
 7. Make sure all 5 services are running on your pi with green lights:
 ```sh
-sudo systemctl status enhanced-wyoming-satellite.service wyoming-openwakeword.service 2mic_leds.service  pulseaudio.service snapclient.service
+sudo systemctl status enhanced-wyoming-satellite.service wyoming-openwakeword.service 2mic_leds.service pulseaudio.service snapclient.service
 ```
 
 8. Done! Move to next tutorial file.
