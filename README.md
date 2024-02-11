@@ -42,3 +42,59 @@ Enhance the capabilities of your Wyoming Voice Assistants to unlock multi-room m
 **Documentation & Tutorials:**
 - [Watch the video tutorial](https://youtu.be/kS0agn13hhU)
 - [Written tutorial](https://github.com/FutureProofHomes/wyoming-enhancements/tree/master/snapcast/docs)
+
+
+## Enhancement 3.1: Bluetooth Presence Detection by plugging an ESP32 with ESPresense Installed into the Wyoming Satellite.
+
+Have an ESP32 lying around? Install ESPresense on it then plug it in to the Wyoming Voice Satellite's spare USB port like a dongle.  Enjoy the convience of a single power cable and two products that almost/kinda feel like one.
+
+**Voice Command Examples:**
+- "Hey Jarvis, make the music follow me around the home."
+
+**Prerequisite Hardware/Software:**
+- [Wyoming Voice Satellite project](https://github.com/rhasspy/wyoming-satellite)
+- [ESP32 Base Station](https://espresense.com/base-stations)
+
+**Additional Software/Configurations Required:**
+- [ESPresense](https://espresense.com/) 
+- [MQTT Misquitto Broker](https://www.home-assistant.io/integrations/mqtt/)
+
+**Pros & Cons**
+- Pros: 
+    - Fast detection times and very configurable
+    - Bluetooth Low Energy works with Apple Devices 
+    - Very active project and codebase
+- Cons: 
+    - Requires extra ESP32 hardware and doesn't run directly on the Wyoming Satellite :(
+
+**Documentation & Tutorials:**
+- Watch the video tutorial (Coming Soon..)
+- [Written tutorial](https://github.com/FutureProofHomes/wyoming-enhancements/tree/master/snapcast/docs)
+
+
+## Enhancement 3.2: Bluetooth Presence Detection by Instaling Room Assistant on the Wyoming Satellite
+
+Don't have ESP32 hardware but still want to enhance the capability of your Wyoming Voice Satellite so that it can track nearby bluetooth devices (like iPhones, Watches, Androids, etc..)?  Consider installing Room Assistant directly on the Wyoming Satellite Raspberry Pi.
+
+**Voice Command Examples:**
+- "Hey Jarvis, which room is my wife in?"
+
+**Prerequisite Hardware/Software:**
+- [Wyoming Voice Satellite project](https://github.com/rhasspy/wyoming-satellite)
+
+**Additional Software/Configurations Required:**
+- [Room Assistant](https://www.room-assistant.io/guide/quickstart-pi.html#installing-room-assistant)
+- [MQTT Misquitto Broker](https://www.home-assistant.io/integrations/mqtt/)
+
+**Pros & Cons**
+- Pros: 
+    - No ESP32 required.  Runs directly on the Wyoming Satellite Raspberry Pi
+    - Works nicely with other ESPresnse because Room Assistnat also supports [MQTT_Room](https://www.room-assistant.io/integrations/home-assistant.html#settings)
+- Cons: 
+    - Cannot track Apple Watches via [Bluetooth Low Energy](https://www.room-assistant.io/integrations/bluetooth-low-energy.html#requirements) and will therefore have slower detection times and impact your watch's battery life.
+    - Can require you to install the Room Assistnat companion app on your phone for ideal tracking.
+    - Room Assistant is stable if installed correctly, but the codebase has not been well maintained for a few years now.
+
+**Documentation & Tutorials:**
+- Watch the video tutorial (Coming Soon..)
+- [Written tutorial](https://github.com/FutureProofHomes/wyoming-enhancements/tree/master/snapcast/docs)
