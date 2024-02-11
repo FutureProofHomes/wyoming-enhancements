@@ -72,7 +72,7 @@ Have an ESP32 lying around? Install ESPresense on it then plug it in to the Wyom
 - [Written tutorial](https://github.com/FutureProofHomes/wyoming-enhancements/tree/master/snapcast/docs)
 
 
-## Enhancement 3.2: Bluetooth Presence Detection by Instaling Room Assistant on the Wyoming Satellite
+## Enhancement 3.2: Bluetooth Presence Detection by Installing Room Assistant on the Wyoming Satellite
 
 Don't have ESP32 hardware but still want to enhance the capability of your Wyoming Voice Satellite so that it can track nearby bluetooth devices (like iPhones, Watches, Androids, etc..)?  Consider installing Room Assistant directly on the Wyoming Satellite Raspberry Pi.
 
@@ -97,4 +97,4 @@ Don't have ESP32 hardware but still want to enhance the capability of your Wyomi
 
 **Documentation & Tutorials:**
 - Watch the video tutorial (Coming Soon..)
-- [Written tutorial](https://github.com/FutureProofHomes/wyoming-enhancements/tree/master/snapcast/docs)
+- [Written tutorial](https://github.com/FutureProofHomes/wyoming-enhancements/blob/master/Room%20Assistant/docs/1_install_room_assistant.md)
