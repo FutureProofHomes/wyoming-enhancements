@@ -69,7 +69,7 @@ Have an ESP32 lying around? Install ESPresense on it then plug it in to the Wyom
 
 **Documentation & Tutorials:**
 - Watch the video tutorial (Coming Soon..)
-- [Written tutorial](https://github.com/FutureProofHomes/wyoming-enhancements/tree/master/snapcast/docs)
+- [Written tutorial](https://github.com/FutureProofHomes/wyoming-enhancements/blob/master/ESPresense/docs/1_install_espresense)
 
 
 ## Enhancement 3.2: Bluetooth Presence Detection by Installing Room Assistant on the Wyoming Satellite
