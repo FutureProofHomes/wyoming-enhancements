@@ -44,7 +44,7 @@ Enhance the capabilities of your Wyoming Voice Assistants to unlock multi-room m
 - [Written tutorial](https://github.com/FutureProofHomes/wyoming-enhancements/tree/master/snapcast/docs)
 
 
-## Enhancement 3.1: Bluetooth Presence Detection by plugging an ESP32 with ESPresense Installed into the Wyoming Satellite.
+## Enhancement 3.1: Bluetooth Presence Detection by plugging an ESP32 w/ ESPresense into the Wyoming Satellite.
 
 Have an ESP32 lying around? Install ESPresense on it then plug it in to the Wyoming Voice Satellite's spare USB port like a dongle.  Enjoy the convience of a single power cable and two products that almost/kinda feel like one.
 
