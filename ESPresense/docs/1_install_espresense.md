@@ -1,5 +1,5 @@
 
-**NOTE: This tutorial requires separate ESP32 hardware that we can plug directly into the Wyoming Satellite for each zone in our home.  I personally love the M5 Stack ATOM Lite ESP32 for this project. **
+**NOTE: This tutorial requires separate ESP32 hardware that we can plug directly into the Wyoming Satellite for each zone in our home.  I personally love the M5 Stack ATOM Lite ESP32 for this project.**
 
 1. Plug your ESP32 in to your computer via USB
 
