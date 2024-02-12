@@ -1,7 +1,7 @@
 
 **NOTE: Room Assistant does have official instructions on their website, but you will have issues with those instructions on the Wyoming Satellite's Raspberry Pi Zero 2w hardware, hence this write up.**
 
-1. SSH into your Wyoming Satellite and Install NodeJS on the Raspberry Pi
+1. SSH into your Wyoming Satellite and Install NodeJS on the Raspberry Pi (wait 60 sec for the deprecation warning to pass)
 ```sh
 curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt-get install -y nodejs
