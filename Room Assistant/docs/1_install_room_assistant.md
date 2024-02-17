@@ -54,7 +54,7 @@ sudo setcap cap_net_raw+eip $(eval readlink -f `which hcitool`)
 sudo setcap cap_net_admin+eip $(eval readlink -f `which hciconfig`)
 ```
 
-11. Create your Room Assistant config file for this Wyoming Satellite.
+11. Create your Room Assistant config directory in your user directory.
 ```sh
 mkdir -p ~/room-assistant/config
 ```
