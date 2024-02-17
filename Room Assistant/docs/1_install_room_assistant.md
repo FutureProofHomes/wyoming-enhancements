@@ -1,5 +1,11 @@
 
-**NOTE: Room Assistant does have official instructions on their website, but you will have issues with those instructions on the Wyoming Satellite's Raspberry Pi Zero 2w hardware, hence this write up.**
+**WARNING 1:** Room Assistant DOES have official instructions on their website, but if you follow their steps verbatim on the Wyoming Satellite's Raspberry Pi Zero 2w hardware it will [lock up your device](https://github.com/mKeRix/room-assistant/discussions/1142).  Please follow my steps below to avoid annyoing crashes and lockups.
+
+**WARNING 2:** The Room Assistant project has not been well maintained over the past 2 years and it uses outdated frameworks and libraries.
+
+**WARNING 3:** This tutorial focuses on tracking my family members Apple Watches.  Unfortuantely you can't use the [Bluetooth Low Energy integration](https://www.room-assistant.io/integrations/bluetooth-low-energy.html#bluetooth-low-energy) with the Apple Watch, therefore we must use the [Bluetooth Classic integration](https://www.room-assistant.io/integrations/bluetooth-classic.html#bluetooth-classic) is slightly slower and does slightly impact the watch's battery life.
+
+**WARNING 4:** I think I experienced a moment when Room Assistant's aggressive Bluetooth connections caused Wifi issues on my Raspberry Pi.  This issue has been intermittent and has not been a deal breaker thus far, but it is a bummer. [Read more here](https://github.com/mKeRix/room-assistant/discussions/1142)
 
 1. SSH into your Wyoming Satellite and Install NodeJS on the Raspberry Pi (wait 60 sec for the deprecation warning to pass)
 ```sh
@@ -122,4 +128,10 @@ sudo systemctl enable room-assistant.service
 sudo systemctl start room-assistant.service
 ```
 
+18. Confirming Room Assistant is running in the background as expected
+```sh
+journalctl -u room-assistant.service -f
+```
+
+Congrats!  Room Assistant is set up on your Wyoming Voice Satellite!  Run this on all your voice satellites in each room and they'll all join together into a Room Assistant Cluster to report your Apple Watch's location as you walk from room to room.  Add more devices via their MAC addresses' and enjoy automations based on room presense detection for the family. 
 **(NOTE: You can set the Pi's Swap size back to 100 now if you'd like.)**
