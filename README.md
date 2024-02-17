@@ -89,10 +89,10 @@ Don't have ESP32 hardware but still want to enhance the capability of your Wyomi
 **Pros & Cons**
 - Pros: 
     - No ESP32 required.  Runs directly on the Wyoming Satellite Raspberry Pi
-    - Works nicely with other ESPresnse because Room Assistnat also supports [MQTT_Room](https://www.room-assistant.io/integrations/home-assistant.html#settings)
+    - Works nicely with other ESPresense because Room Assistant also supports [MQTT_Room](https://www.room-assistant.io/integrations/home-assistant.html#settings)
 - Cons: 
     - Cannot track Apple Watches via [Bluetooth Low Energy](https://www.room-assistant.io/integrations/bluetooth-low-energy.html#requirements) and will therefore have slower detection times and impact your watch's battery life.
-    - Can require you to install the Room Assistnat companion app on your phone for ideal tracking.
+    - Can require you to install the Room Assistant companion app on your phone for ideal tracking.
     - Room Assistant is stable if installed correctly, but the codebase has not been well maintained for a few years now.
 
 **Documentation & Tutorials:**
