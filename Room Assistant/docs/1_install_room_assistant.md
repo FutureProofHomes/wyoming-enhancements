@@ -78,12 +78,21 @@ bluetoothClassic:
     - <bluetooth-mac-of-device-to-track>
 ```
 
-13. Create a new `room-assistant.service` file.
+13. Go to your room-assistant by executing `cd ~/room-assistant`.  Then run room-assistant by executing `room-assistant`.  You should see your Wyoming Satellite connect to your MQTT broker successfully.
+
+![image](https://github.com/FutureProofHomes/wyoming-enhancements/assets/155350996/ade746c2-9929-4881-b2ee-0130f47dfdd1)
+
+I highly recommend installing MQTT Explorer on your computer and confirming Room Assistant is reporting your Bluetooth Device's MAC address successfully.
+
+![image](https://github.com/FutureProofHomes/wyoming-enhancements/assets/155350996/d95a9892-bc11-4f84-9358-4f3232c557f6)
+
+
+14. Create a new `room-assistant.service` file.
 ```sh
 sudo nano /etc/systemd/system/room-assistant.service 
 ```
 
-14. Paste in the below service details and modify it to include your user?
+15. Paste in the below service details and modify it to include your user?
 ```sh
 [Unit]
 Description=room-assistant service
@@ -103,12 +112,12 @@ User=<your_user_here>
 WantedBy=multi-user.target
 ```
 
-15. Enable your new Room Assistant Service File
+16. Enable your new Room Assistant Service File
 ```sh
 sudo systemctl enable room-assistant.service
 ```
 
-16. Start the Service
+17. Start the Service
 ```sh
 sudo systemctl start room-assistant.service
 ```
