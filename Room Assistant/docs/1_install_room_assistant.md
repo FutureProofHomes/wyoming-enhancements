@@ -1,11 +1,11 @@
 
-**WARNING 1:** Room Assistant DOES have official instructions on their website, but if you follow their steps verbatim on the Wyoming Satellite's Raspberry Pi Zero 2w hardware it will [lock up your device](https://github.com/mKeRix/room-assistant/discussions/1142).  Please follow my steps below to avoid annyoing crashes and lockups.
+**WARNING 1:** Room Assistant DOES have official instructions on their website, but if you follow their steps verbatim on the Wyoming Satellite's Raspberry Pi Zero 2w hardware it will [lock up your device](https://github.com/mKeRix/room-assistant/discussions/1142).  Please follow my steps below to avoid annyoing lockups while installing Room Assistant.
 
 **WARNING 2:** The Room Assistant project has not been well maintained over the past 2 years and it uses outdated frameworks and libraries.
 
-**WARNING 3:** This tutorial focuses on tracking my family members Apple Watches.  Unfortuantely you can't use the [Bluetooth Low Energy integration](https://www.room-assistant.io/integrations/bluetooth-low-energy.html#bluetooth-low-energy) with the Apple Watch, therefore we must use the [Bluetooth Classic integration](https://www.room-assistant.io/integrations/bluetooth-classic.html#bluetooth-classic) is slightly slower and does slightly impact the watch's battery life.
+**WARNING 3:** This tutorial focuses on tracking my family members' Apple Watches.  Unfortuantely, you can't use Room Assistant's [Bluetooth Low Energy integration](https://www.room-assistant.io/integrations/bluetooth-low-energy.html#bluetooth-low-energy) with the Apple Watch.  This means we must use the [Bluetooth Classic integration](https://www.room-assistant.io/integrations/bluetooth-classic.html#bluetooth-classic) which has slower performance, is less accurate, and slightly impacts the Apple Watch's battery life.
 
-**WARNING 4:** I think I experienced a moment when Room Assistant's aggressive Bluetooth connections caused Wifi issues on my Raspberry Pi.  This issue has been intermittent and has not been a deal breaker thus far, but it is a bummer. [Read more here](https://github.com/mKeRix/room-assistant/discussions/1142)
+**WARNING 4:** I believe I've experienced a moment when Room Assistant's repeated Bluetooth connection attempts caused Wifi connection issues on my Raspberry Pi.  This issue has been intermittent and has potential to be a deal breaker, but so far it's only been intermittently annoying. [Read more here](https://github.com/mKeRix/room-assistant/discussions/1142)
 
 1. SSH into your Wyoming Satellite and Install NodeJS on the Raspberry Pi (wait 60 sec for the deprecation warning to pass)
 ```sh
