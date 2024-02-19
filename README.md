@@ -64,8 +64,9 @@ Don't have ESP32 hardware but still want to enhance the capability of your Wyomi
     - Works nicely with other ESPresense because Room Assistant also supports [MQTT_Room](https://www.room-assistant.io/integrations/home-assistant.html#settings)
 - Cons: 
     - Cannot track Apple Watches via [Bluetooth Low Energy](https://www.room-assistant.io/integrations/bluetooth-low-energy.html#requirements) and will therefore have slower detection times and impact your watch's battery life.
-    - Can require you to install the Room Assistant companion app on your phone for ideal tracking.
-    - Room Assistant is stable if installed correctly, but the codebase has not been well maintained for a few years now.
+    - Can impact the Raspberry Pi's wifi connection when handling heavy bluetooth throughput.
+    - Depending in the device, Room Assistant may require you to install a companion app on your mobile device for ideal tracking.
+    - Room Assistant codebase has not been well maintained for a few years now.
 
 **Documentation & Tutorials:**
 - Watch the video tutorial (Coming Soon..)
