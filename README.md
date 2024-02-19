@@ -69,7 +69,7 @@ Don't have ESP32 hardware but still want to enhance the capability of your Wyomi
     - Room Assistant codebase has not been well maintained for a few years now.
 
 **Documentation & Tutorials:**
-- Watch the video tutorial (Coming Soon..)
+- [Video Tutorial](https://www.youtube.com/watch?v=R1kxuB4pi9k)
 - [Written tutorial](https://github.com/FutureProofHomes/wyoming-enhancements/blob/master/Room%20Assistant/docs/1_install_room_assistant.md)
 
 
@@ -97,5 +97,5 @@ Have an ESP32 lying around? Install ESPresense on it then plug it in to the Wyom
     - Requires extra ESP32 hardware and doesn't run directly on the Wyoming Satellite :(
 
 **Documentation & Tutorials:**
-- Watch the video tutorial (Coming Soon..)
+- [Video Tutorial](https://www.youtube.com/watch?v=R1kxuB4pi9k)
 - [Written tutorial](https://github.com/FutureProofHomes/wyoming-enhancements/blob/master/ESPresense/docs/1_install_espresense.md)
