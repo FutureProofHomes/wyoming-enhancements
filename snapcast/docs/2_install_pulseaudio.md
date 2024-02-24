@@ -76,11 +76,17 @@ Run `pactl list sinks` and scroll to the bottom and notice your Active Port is p
 ```sh
 pactl set-sink-port 1 "analog-output-headphones"
 ```
+Please note that if you are setting this up on a Raspberry Pi 3B or 4B, you need an additional step at this point to make it route the audio through the 2mic hat (and likely the 4mic one as well). Run the following command to do this.
+
+```sh
+pactl set-default-sink alsa_output.platform-soc_sound.stereo-fallback
+```
 
 13. Test and make sure you can hear the wav file:
 ```sh
 paplay /usr/share/sounds/alsa/Front_Center.wav
 ```
+Note that if you have a RAspbery Pi 3B or 4B, this may or may not seem to work, but it will output on the hat as intended.
 
 14. Modify PulseAudio to duck the music volume when you or the voice assistant are speaking:
 ```sh
