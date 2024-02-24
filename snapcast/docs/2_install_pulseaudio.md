@@ -86,7 +86,7 @@ pactl set-default-sink alsa_output.platform-soc_sound.stereo-fallback
 ```sh
 paplay /usr/share/sounds/alsa/Front_Center.wav
 ```
-Note that if you have a RAspbery Pi 3B or 4B, this may or may not seem to work, but it will output on the hat as intended.
+Note that if you have a Raspbery Pi 3B or 4B, this may or may not seem to work, but it will output on the hat as intended.
 
 14. Modify PulseAudio to duck the music volume when you or the voice assistant are speaking:
 ```sh
