@@ -64,7 +64,7 @@ WantedBy=multi-user.target
 
 7. Reboot your Pi:
 ```sh
-sudo reboot -h now`
+sudo reboot -h now
 ```
 
 8. SSH back in to your Pi.  (See step 1)
