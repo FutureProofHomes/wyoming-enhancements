@@ -45,6 +45,11 @@ Add `--tts-stop-command` so that we turn the volume back up after the interactio
 --tts-stop-command '/home/<your_username>/wyoming-enhancements/snapcast/scripts/done.sh' \
 ```
 
+Add `--error-command` so that we turn the volume back up after an error.  BE SURE TO ADD YOUR USERNAME!
+```sh
+--error-command '/home/<your_username>/wyoming-enhancements/snapcast/scripts/done.sh' \
+```
+
 5. Your resulting `enhanced-wyoming-satellite.service` should resemble the below.  Be sure to change `loftsatellite` to your username.
 ```sh
 [Unit]
@@ -71,6 +76,7 @@ ExecStart=/home/loftsatellite/wyoming-satellite/script/run \
     --event-uri 'tcp://127.0.0.1:10500' \
     --detection-command '/home/loftsatellite/wyoming-enhancements/snapcast/scripts/awake.sh' \
     --tts-stop-command '/home/loftsatellite/wyoming-enhancements/snapcast/scripts/done.sh' \
+    --error-command '/home/<your_username>/wyoming-enhancements/snapcast/scripts/done.sh' \
     --awake-wav sounds/awake.wav \
     --done-wav sounds/done.wav
 WorkingDirectory=/home/loftsatellite/wyoming-satellite
