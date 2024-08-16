@@ -2,7 +2,7 @@
 echo $(date) [awake.sh] ...Starting awake.sh script
 
 ### Insert any commands that you would like to call for performing external actions.
-### This example will call a webhook on the HomeAssistant server which sends a remote control command to toggle mute on a sound bar.
+### This example will call a webhook on the Home Assistant server which sends a remote control command to toggle mute on a sound bar.
 
 #echo $(date) [awake.sh] ...Sending mute to living room tv 
 #curl -X POST -H "Content-Type: application/json" -d '{"remote":"remote.living_room_hub","device":"JBL Sound Bar","command":"Mute"}' https://<HA server address>:8123/api/webhook/<WEBHOOK>  > /dev/null 2>&1 

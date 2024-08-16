@@ -13,7 +13,7 @@
 
 6. In the left-hand navigation click on "Devices" then click the blue "Enroll" button. Follow the [Apple Watch enrollment steps on the ESPresense Website](https://espresense.com/beacons/apple#apple-watch-using-bluetooth-terminal-app) to enroll your Apple watch (temporarily requires iOS and Watch app to be installed).
 
-7. Edit HomeAssistant's `configuration.yaml` to add your Apple Watch as a sensor you want to track in Home Assistant.
+7. Edit Home Assistant's `configuration.yaml` to add your Apple Watch as a sensor you want to track in Home Assistant.
 
 ```yaml
 sensor:

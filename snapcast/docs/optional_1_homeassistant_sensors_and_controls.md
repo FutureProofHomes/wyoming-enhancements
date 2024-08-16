@@ -1,14 +1,15 @@
 # [OPTIONAL] Integrate Satellite PulseAudio into HomeAssistnat
 
 ## Background
+
 Currently, there are no known integrations for controlling remote PulseAudio servers.
 
-The following setup will create `shell_command` services allowing for control from HomeAssistant. 
+The following setup will create `shell_command` services allowing for control from Home Assistant.
 
 These services can be used to integrate controls on dashboards, used in automations, etc.
 
-
 Basic Volume and Mute controls:
+
 - Set volume to a specified %
 - Increase/Decrease volume by specific %
 - Mute/Unmute/Toggle Mute
@@ -16,10 +17,12 @@ Basic Volume and Mute controls:
 ---
 
 ## Services (shell_command)
-The services are built on `shell_command` which utilizes ssh commands from the HomeAssistant instance to the satellites.  
-The community has provided excellent guides on setting up passwordless ssh connections from your HomeAssistant instance which is a prerequisite to this setup.
+
+The services are built on `shell_command` which utilizes ssh commands from the Home Assistant instance to the satellites.  
+The community has provided excellent guides on setting up password-less SSH connections from your Home Assistant instance which is a prerequisite to this setup.
 
 Add the following `shell_command` definitions to your configuration:
+
 ```
 shell_command:
   pa_volume_set: "ssh -i /config/.ssh/id_rsa -o UserKnownHostsFile=/config/.ssh/known_hosts {{ ssh_user_at_host }} pamixer --set-volume {{ volume_percent }}"
@@ -36,6 +39,7 @@ The variable `{{ ssh_user_at_host }}` should be set in the payload to address th
 Examples:
 
 Increase volume by 10%:
+
 ```
 - service: shell_command.pa_volume_increase
             metadata: {}
@@ -45,6 +49,7 @@ Increase volume by 10%:
 ```
 
 Set the volume to a specified percentage - take the value from an `input_number` helper which can be a slider on your dashboard:
+
 ```
 - service: shell_command.pa_volume_set
             metadata: {}
@@ -53,15 +58,15 @@ Set the volume to a specified percentage - take the value from an `input_number`
               volume_percent: "{{ states('input_number.volume_slider')|int }}"
 ```
 
-
 ---
 
 ## Switches and Sensors
 
-We can create entities in HomeAssistant to represent our PulseAudio server state on the satellite.  You can create a corresponding `switch` and `sensor` entity for each.
+We can create entities in Home Assistant to represent our PulseAudio server state on the satellite. You can create a corresponding `switch` and `sensor` entity for each.
 For this function, we use the `command_line` integration.
 
 In your configuration, add:
+
 ```
 command_line:
   - switch:
@@ -106,9 +111,8 @@ For instance, you can add a volume slider and a mute toggle button.
 
 The volume slider can be implemented with the assistance of an `input_number` helper and a small automation to sync the state.
 
-This sample automation is basic but functional.  It is bi-directional - meaning that the changing the slider will change the volume on the satellite.
-Inversely, the slider will update on the HomeAssistant side if the volume is changed from the satellite.
-
+This sample automation is basic but functional. It is bi-directional - meaning that the changing the slider will change the volume on the satellite.
+Inversely, the slider will update on the Home Assistant side if the volume is changed from the satellite.
 
 ```
 alias: "[controller] Set PA volume from Input Slider"
