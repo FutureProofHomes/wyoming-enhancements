@@ -18,10 +18,10 @@ git clone https://github.com/FutureProofHomes/wyoming-enhancements.git
 4. Follow [the Snapclient developer's install steps](https://github.com/badaix/snapcast/blob/develop/doc/install.md#debian) to download the SnapClient into our new enhancements directory:
 ```sh
 cd wyoming-enhancements/snapcast/
-wget https://github.com/badaix/snapcast/releases/download/v0.27.0/snapclient_0.27.0-1_armhf.deb
+wget https://github.com/badaix/snapcast/releases/download/v0.28.0/snapclient_0.28.0-1_armhf-bookworm.deb
 ```
 ```sh
-sudo apt install ./snapclient_0.27.0-1_armhf.deb
+sudo apt install ./snapclient_0.28.0-1_armhf-bookworm.deb
 ```
 
 5. Get the IP address of your SnapServer (typically the same IP as your Home Assistant instance) and let's modify the SnapClient's options so it always boots with correct settings.
