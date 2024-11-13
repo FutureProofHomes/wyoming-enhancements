@@ -19,7 +19,7 @@ sequence:
      entity_id: "{{mass_media_player}}"
    data: {}
  - service: mass.play_media
-    data:
+   data:
       media_id: "{{query_response.playlists[0].uri}}"
       entity_id: "{{mass_media_player}}"
       enqueue: replace
