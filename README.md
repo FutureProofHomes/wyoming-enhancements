@@ -1,3 +1,11 @@
+# THIS REPO IS OUTDATED
+Hello, world!
+The FPH team is currently focused on our ESP32-based voice assistant, the [Satellite1 Dev Kit](https://futureproofhomes.net/products/satellite1-pcb-dev-kit). As a result, this repository may be outdated.
+
+That said, it is entirely possible to connect just the [Satellite1 HAT](https://futureproofhomes.net/products/satellite1-top-microphone-board) to a Raspberry Pi running Wyoming. If anyone would like to take ownership of this project, the FPH team is happy to support and assist in building a Wyoming-compatible voice assistant on the Satellite1 hardware.
+
+Thank you for your understanding!
+
 # Wyoming Voice Assistant Enhancements
 
 This repository is dedicated to sharing tutorials that enhance Home Assistant's [Wyoming Voice Satellite project](https://github.com/rhasspy/wyoming-satellite).
