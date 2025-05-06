@@ -19,7 +19,7 @@ sequence:
      entity_id: "{{mass_media_player}}"
    data: {}
  - service: mass.play_media
-    data:
+   data:
       media_id: "{{query_response.playlists[0].uri}}"
       entity_id: "{{mass_media_player}}"
       enqueue: replace
@@ -75,7 +75,7 @@ mode: single
           description: The artist, album, or type of music to play
         mass_media_player:
           type: string
-          description: The Music Assistant compatible media player's full entity id.  Not a sonos entity.  The correct value starts with "media_player" and usually has the work "satellite" in it.
+          description: The Music Assistant compatible media player's full entity id.  Not a sonos entity.  The correct value starts with "media_player" and usually has the word "satellite" in it.
       required:
       - music_query
   function:
