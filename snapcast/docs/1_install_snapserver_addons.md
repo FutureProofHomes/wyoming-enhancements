@@ -6,6 +6,7 @@
 
 3. Head to the add-on's Info tab and enable "Start on boot," "Watchdog," and "Auto update." Click Start.
 
-4. Check the add-on's Log tab to ensure the Snapserver started without errors.
+4. Check the add-on's Log tab to ensure the SnapServer started without errors.
 
 5. Installation complete! Proceed to the next tutorial file.
+

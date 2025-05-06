@@ -1,6 +1,7 @@
-## Enable the LLM to `Play_Music` via Music Assistant.
+## Enable the LLM to `Play_Music` via Music Assistant
 
 1. Copy my `play_music` script to your Home Assistant scripts.
+
 ```
 alias: Play Music
 sequence:
@@ -26,7 +27,8 @@ sequence:
 mode: single
 ```
 
-2. (OPTIONAL, USE AT YOUR OWN RISK) Below is a slighly modified `play_music` script that tries to automatically play music back on the voice assistant you last spoke on.  This allows you to say "Play Nirvana" instead of "Play Nirvana in the loft".  There are many other ways to implement a solution, this is just an experiment.
+2. (OPTIONAL, USE AT YOUR OWN RISK) Below is a slightly modified `play_music` script that tries to automatically play music back on the voice assistant you last spoke on. This allows you to say "Play Nirvana" instead of "Play Nirvana in the loft". There are many other ways to implement a solution, this is just an experiment.
+
 ```
 alias: Play Music
 sequence:
@@ -63,6 +65,7 @@ mode: single
 ```
 
 3. Add my spec to your Extended OpenAI Conversation functions so that the LLM can execute your `play_music` script:
+
 ```
 - spec:
     name: play_music
@@ -87,6 +90,6 @@ mode: single
         mass_media_player: '{{mass_media_player}}'
 ```
 
-4.  All done!  Now ask your voice assistant to "Play [artist_name, genre_of_music, or_album] in my [room_name]"
+4. All done! Now ask your voice assistant to "Play [artist_name, genre_of_music, or_album] in my [room_name]"
 
-NOTE: I recognize there are many more music related scripts to be desired. I invite others to make PRs or share their HA scripts/Extended OpenAI Conversation specs.  Let's also be sure and share our working scripts with the original developers for their documentation.
+NOTE: I recognize there are many more music related scripts to be desired. I invite others to make PRs or share their HA scripts/Extended OpenAI Conversation specs. Let's also be sure and share our working scripts with the original developers for their documentation.
